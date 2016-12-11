@@ -108,11 +108,11 @@ extension TextFieldValidatorTableViewCell {
                 
             case .PasswordCell:
                 if (text.characters.count < 8) {
-                    return (false, "Username must longer than 8 characters")
+                    return (false, "Password must longer than 8 characters")
                 } else if (text.characters.count > 16) {
-                    return (false, "Username must not longer than 16 characters")
+                    return (false, "Password must not longer than 16 characters")
                 } else if (text.hasSpecialCharacters()) {
-                    return (false, "User cannot contain any special character")
+                    return (false, "Password cannot contain any special character")
                 }
                 return (true, "")
                 
