@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9265B4F1DFD45DF0050A516 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9265B4E1DFD45DF0050A516 /* StringExtension.swift */; };
 		F96DF0821DFC45FE00B281CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DF0811DFC45FE00B281CF /* AppDelegate.swift */; };
 		F96DF0841DFC45FE00B281CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DF0831DFC45FE00B281CF /* ViewController.swift */; };
 		F96DF0871DFC45FE00B281CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96DF0851DFC45FE00B281CF /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9265B4E1DFD45DF0050A516 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F96DF07E1DFC45FE00B281CF /* TextFieldValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96DF0811DFC45FE00B281CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96DF0831DFC45FE00B281CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				F96DF0811DFC45FE00B281CF /* AppDelegate.swift */,
 				F96DF0831DFC45FE00B281CF /* ViewController.swift */,
+				F9265B4E1DFD45DF0050A516 /* StringExtension.swift */,
 				F96DF0A11DFC470A00B281CF /* TextFieldValidatorTableViewCell.swift */,
 				F96DF0851DFC45FE00B281CF /* Main.storyboard */,
 				F96DF0881DFC45FE00B281CF /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9265B4F1DFD45DF0050A516 /* StringExtension.swift in Sources */,
 				F96DF0A21DFC470A00B281CF /* TextFieldValidatorTableViewCell.swift in Sources */,
 				F96DF0841DFC45FE00B281CF /* ViewController.swift in Sources */,
 				F96DF0821DFC45FE00B281CF /* AppDelegate.swift in Sources */,

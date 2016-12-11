@@ -89,25 +89,44 @@ extension TextFieldValidatorTableViewCell {
         case UsernameCell
         case PasswordCell
         case EmailCell
+        case Firstname
         case None
         
         func validate(_ text: String) -> (result: Bool, desc: String) {
             switch self {
             case .UsernameCell:
-                if (text.characters.count < 10) {
-                    return (false, "Username must longer than 10 characters")
+                if (text.characters.count < 8) {
+                    return (false, "Username must longer than 8 characters")
+                } else if (text.characters.count > 16) {
+                    return (false, "Username must not longer than 16 characters")
+                } else if (text.isNumeric()) {
+                    return (false, "Username must contain at lease one character")
+                } else if (text.hasSpecialCharacters()) {
+                    return (false, "Username cannot contain any special character")
                 }
                 return (true, "")
                 
             case .PasswordCell:
-                if (text.characters.count < 5) {
-                    return (false, "Password must longer than 5 characters")
+                if (text.characters.count < 8) {
+                    return (false, "Username must longer than 8 characters")
+                } else if (text.characters.count > 16) {
+                    return (false, "Username must not longer than 16 characters")
+                } else if (text.hasSpecialCharacters()) {
+                    return (false, "User cannot contain any special character")
                 }
                 return (true, "")
                 
             case .EmailCell:
-                if (!text.contains("@") || !text.contains(".")) {
+                if (!text.isEmailFormat()) {
                     return (false, "Invalid email format")
+                }
+                return (true, "")
+                
+            case .Firstname:
+                if (text.characters.count < 2) {
+                    return (false, "Username must longer than 2 characters")
+                } else if (!text.isCharacter()) {
+                    return (false, "Only character is allowed")
                 }
                 return (true, "")
                 
@@ -124,6 +143,8 @@ extension TextFieldValidatorTableViewCell {
                 return "Password"
             case .EmailCell:
                 return "Email"
+            case .Firstname:
+                return "Firstname"
             case .None:
                 return "Something went wrong"
             }

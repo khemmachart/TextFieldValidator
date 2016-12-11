@@ -57,6 +57,8 @@ extension ViewController: UITableViewDataSource {
             cell.validatorCellType = .PasswordCell
         case 2:
             cell.validatorCellType = .EmailCell
+        case 3:
+            cell.validatorCellType = .Firstname
         default:
             cell.validatorCellType = .None
         }
