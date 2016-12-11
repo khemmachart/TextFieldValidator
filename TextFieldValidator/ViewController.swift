@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
     }
     
+    // MARK: - Callback functions
+    
     func validateSuccessCallback(indexPath: IndexPath) -> ((_ text: String, _ desc: String) -> Void) {
         return { (text, resultDesc) in
             self.data[indexPath] = text
