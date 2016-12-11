@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldValidator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-T7-XNK">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="64" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ValidatorCell" rowHeight="130" id="ulE-jA-SBF" customClass="TextFieldValidatorTableViewCell" customModule="TextFieldValidator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ulE-jA-SBF" id="H2D-Jq-JtD">
+                                            <frame key="frameInset" width="375" height="129.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obc-HC-cEH">
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xzq-vg-rbU">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="Mvq-ue-XDx"/>
+                                                            </constraints>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <action selector="textFieldDidEndEditing:" destination="ulE-jA-SBF" eventType="editingDidEnd" id="7DF-fD-lvz"/>
+                                                                <action selector="textFieldDidTextChange:" destination="ulE-jA-SBF" eventType="editingChanged" id="caq-SJ-19y"/>
+                                                                <outlet property="delegate" destination="ulE-jA-SBF" id="nSd-wc-3ej"/>
+                                                            </connections>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Xzq-vg-rbU" secondAttribute="bottom" id="LDJ-nb-iGk"/>
+                                                        <constraint firstItem="Xzq-vg-rbU" firstAttribute="top" secondItem="obc-HC-cEH" secondAttribute="top" id="YhM-lz-4nL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Xzq-vg-rbU" secondAttribute="trailing" constant="10" id="bet-vi-Djo"/>
+                                                        <constraint firstItem="Xzq-vg-rbU" firstAttribute="leading" secondItem="obc-HC-cEH" secondAttribute="leading" constant="10" id="mAh-0J-YAg"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Error description" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OC-G0-UbS">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-Al-3su">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="obc-HC-cEH" secondAttribute="trailing" constant="8" id="17V-PY-Qmf"/>
+                                                <constraint firstItem="2OC-G0-UbS" firstAttribute="top" secondItem="obc-HC-cEH" secondAttribute="bottom" constant="8" id="28B-gM-mmq"/>
+                                                <constraint firstItem="2OC-G0-UbS" firstAttribute="leading" secondItem="obc-HC-cEH" secondAttribute="leading" id="G1U-q2-eBQ"/>
+                                                <constraint firstItem="2OC-G0-UbS" firstAttribute="trailing" secondItem="obc-HC-cEH" secondAttribute="trailing" id="G3s-vA-Dvp"/>
+                                                <constraint firstAttribute="bottom" secondItem="2OC-G0-UbS" secondAttribute="bottom" priority="750" constant="8" id="KaN-eH-SO9"/>
+                                                <constraint firstItem="zEi-Al-3su" firstAttribute="leading" secondItem="H2D-Jq-JtD" secondAttribute="leading" constant="64" id="Pun-Dp-TOs"/>
+                                                <constraint firstItem="zEi-Al-3su" firstAttribute="top" secondItem="H2D-Jq-JtD" secondAttribute="top" constant="8" id="fNS-xD-4Nc"/>
+                                                <constraint firstItem="obc-HC-cEH" firstAttribute="leading" secondItem="H2D-Jq-JtD" secondAttribute="leading" constant="64" id="m4O-0k-gkm"/>
+                                                <constraint firstItem="obc-HC-cEH" firstAttribute="top" secondItem="zEi-Al-3su" secondAttribute="bottom" constant="8" id="sdg-Ra-GRY"/>
+                                                <constraint firstAttribute="trailing" secondItem="zEi-Al-3su" secondAttribute="trailing" constant="8" id="wss-Rv-wKV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="containerView" destination="obc-HC-cEH" id="ocr-7x-v2A"/>
+                                            <outlet property="textField" destination="Xzq-vg-rbU" id="TCr-Qx-Brd"/>
+                                            <outlet property="titleLabel" destination="zEi-Al-3su" id="MNf-pH-52W"/>
+                                            <outlet property="validationDescLabel" destination="2OC-G0-UbS" id="X4T-4E-Mm5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pqC-bp-pkg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="F7q-jr-NaJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7HY-T7-XNK" secondAttribute="trailing" id="5Bn-Og-xBH"/>
+                            <constraint firstItem="7HY-T7-XNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gmw-0J-oT2"/>
+                            <constraint firstItem="7HY-T7-XNK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="naQ-fC-Sgp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7HY-T7-XNK" secondAttribute="bottom" id="sNy-za-96D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="7HY-T7-XNK" id="bl3-lr-4Nj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

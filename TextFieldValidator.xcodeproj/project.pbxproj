@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F96DF0821DFC45FE00B281CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DF0811DFC45FE00B281CF /* AppDelegate.swift */; };
+		F96DF0841DFC45FE00B281CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DF0831DFC45FE00B281CF /* ViewController.swift */; };
+		F96DF0871DFC45FE00B281CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96DF0851DFC45FE00B281CF /* Main.storyboard */; };
+		F96DF0891DFC45FE00B281CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96DF0881DFC45FE00B281CF /* Assets.xcassets */; };
+		F96DF08C1DFC45FE00B281CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96DF08A1DFC45FE00B281CF /* LaunchScreen.storyboard */; };
+		F96DF0A21DFC470A00B281CF /* TextFieldValidatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DF0A11DFC470A00B281CF /* TextFieldValidatorTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F96DF07E1DFC45FE00B281CF /* TextFieldValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96DF0811DFC45FE00B281CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F96DF0831DFC45FE00B281CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F96DF0861DFC45FE00B281CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F96DF0881DFC45FE00B281CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F96DF08B1DFC45FE00B281CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F96DF08D1DFC45FE00B281CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F96DF0A11DFC470A00B281CF /* TextFieldValidatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldValidatorTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F96DF07B1DFC45FE00B281CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F96DF0751DFC45FE00B281CF = {
+			isa = PBXGroup;
+			children = (
+				F96DF0801DFC45FE00B281CF /* TextFieldValidator */,
+				F96DF07F1DFC45FE00B281CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F96DF07F1DFC45FE00B281CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F96DF07E1DFC45FE00B281CF /* TextFieldValidator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F96DF0801DFC45FE00B281CF /* TextFieldValidator */ = {
+			isa = PBXGroup;
+			children = (
+				F96DF0811DFC45FE00B281CF /* AppDelegate.swift */,
+				F96DF0831DFC45FE00B281CF /* ViewController.swift */,
+				F96DF0A11DFC470A00B281CF /* TextFieldValidatorTableViewCell.swift */,
+				F96DF0851DFC45FE00B281CF /* Main.storyboard */,
+				F96DF0881DFC45FE00B281CF /* Assets.xcassets */,
+				F96DF08A1DFC45FE00B281CF /* LaunchScreen.storyboard */,
+				F96DF08D1DFC45FE00B281CF /* Info.plist */,
+			);
+			path = TextFieldValidator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F96DF07D1DFC45FE00B281CF /* TextFieldValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F96DF09B1DFC45FE00B281CF /* Build configuration list for PBXNativeTarget "TextFieldValidator" */;
+			buildPhases = (
+				F96DF07A1DFC45FE00B281CF /* Sources */,
+				F96DF07B1DFC45FE00B281CF /* Frameworks */,
+				F96DF07C1DFC45FE00B281CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldValidator;
+			productName = TextFieldValidator;
+			productReference = F96DF07E1DFC45FE00B281CF /* TextFieldValidator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F96DF0761DFC45FE00B281CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Khemmachart Chutapetch";
+				TargetAttributes = {
+					F96DF07D1DFC45FE00B281CF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F96DF0791DFC45FE00B281CF /* Build configuration list for PBXProject "TextFieldValidator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F96DF0751DFC45FE00B281CF;
+			productRefGroup = F96DF07F1DFC45FE00B281CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F96DF07D1DFC45FE00B281CF /* TextFieldValidator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F96DF07C1DFC45FE00B281CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96DF08C1DFC45FE00B281CF /* LaunchScreen.storyboard in Resources */,
+				F96DF0891DFC45FE00B281CF /* Assets.xcassets in Resources */,
+				F96DF0871DFC45FE00B281CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F96DF07A1DFC45FE00B281CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96DF0A21DFC470A00B281CF /* TextFieldValidatorTableViewCell.swift in Sources */,
+				F96DF0841DFC45FE00B281CF /* ViewController.swift in Sources */,
+				F96DF0821DFC45FE00B281CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F96DF0851DFC45FE00B281CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F96DF0861DFC45FE00B281CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F96DF08A1DFC45FE00B281CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F96DF08B1DFC45FE00B281CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F96DF0991DFC45FE00B281CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F96DF09A1DFC45FE00B281CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F96DF09C1DFC45FE00B281CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldValidator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextzy.TextFieldValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F96DF09D1DFC45FE00B281CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldValidator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextzy.TextFieldValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F96DF0791DFC45FE00B281CF /* Build configuration list for PBXProject "TextFieldValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96DF0991DFC45FE00B281CF /* Debug */,
+				F96DF09A1DFC45FE00B281CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F96DF09B1DFC45FE00B281CF /* Build configuration list for PBXNativeTarget "TextFieldValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96DF09C1DFC45FE00B281CF /* Debug */,
+				F96DF09D1DFC45FE00B281CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F96DF0761DFC45FE00B281CF /* Project object */;
+}
